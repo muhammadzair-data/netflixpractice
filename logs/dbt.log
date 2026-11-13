@@ -1,0 +1,82 @@
+[0m15:55:41.787395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1ed550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b80b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b80b890>]}
+
+
+============================== 15:55:41.790404 | 4072c5c9-93f9-4837-a5ab-1eaa6c62f868 ==============================
+[0m15:55:41.790404 [info ] [MainThread]: Running with dbt=1.12.7
+[0m15:55:41.790724 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init netflix', 'profiles_dir': '/Users/apple/.dbt', 'static_parser': 'True', 'introspect': 'True', 'version_check': 'True', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'partial_parse': 'True', 'printer_width': '80', 'log_format': 'default', 'log_cache_events': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'cache_selected_only': 'False', 'empty': 'None', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'target_path': 'None'}
+[0m15:55:41.796811 [debug] [MainThread]: Starter project path: /Users/apple/Documents/netflixpractice/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m15:55:41.800159 [info ] [MainThread]: Setting up your profile.
+[0m16:04:58.315001 [info ] [MainThread]: Profile netflix written to /Users/apple/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:04:58.319138 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:04:58.320264 [info ] [MainThread]: dbt version: 1.12.7
+[0m16:04:58.320691 [info ] [MainThread]: python version: 3.13.12
+[0m16:04:58.321074 [info ] [MainThread]: python path: /Users/apple/Documents/netflixpractice/venv/bin/python3.13
+[0m16:04:58.321414 [info ] [MainThread]: os info: macOS-26.6-arm64-arm-64bit-Mach-O
+[0m16:04:58.368363 [info ] [MainThread]: Using profiles dir at /Users/apple/.dbt
+[0m16:04:58.368714 [info ] [MainThread]: Using profiles.yml file at /Users/apple/.dbt/profiles.yml
+[0m16:04:58.368893 [info ] [MainThread]: Using dbt_project.yml file at /Users/apple/Documents/netflixpractice/netflix/dbt_project.yml
+[0m16:04:58.369544 [info ] [MainThread]: adapter type: snowflake
+[0m16:04:58.369722 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:04:58.428283 [info ] [MainThread]: Configuration:
+[0m16:04:58.428572 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:04:58.428710 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:04:58.428826 [info ] [MainThread]: Required dependencies:
+[0m16:04:58.429064 [debug] [MainThread]: Executing "git --help"
+[0m16:04:58.451483 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:04:58.452066 [debug] [MainThread]: STDERR: "b''"
+[0m16:04:58.452241 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:04:58.452392 [info ] [MainThread]: Connection:
+[0m16:04:58.452554 [info ] [MainThread]:   account: cralbeg-fb15665
+[0m16:04:58.452668 [info ] [MainThread]:   user: ADMIN
+[0m16:04:58.452774 [info ] [MainThread]:   database: MOVIELENS
+[0m16:04:58.452878 [info ] [MainThread]:   warehouse: MOVIELENS
+[0m16:04:58.452980 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m16:04:58.453080 [info ] [MainThread]:   schema: DEV
+[0m16:04:58.453181 [info ] [MainThread]:   authenticator: None
+[0m16:04:58.453279 [info ] [MainThread]:   oauth_client_id: None
+[0m16:04:58.453381 [info ] [MainThread]:   query_tag: None
+[0m16:04:58.453488 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:04:58.453588 [info ] [MainThread]:   host: None
+[0m16:04:58.453684 [info ] [MainThread]:   port: None
+[0m16:04:58.453781 [info ] [MainThread]:   proxy_host: None
+[0m16:04:58.453877 [info ] [MainThread]:   proxy_port: None
+[0m16:04:58.453973 [info ] [MainThread]:   protocol: None
+[0m16:04:58.454069 [info ] [MainThread]:   connect_retries: 1
+[0m16:04:58.454165 [info ] [MainThread]:   connect_timeout: None
+[0m16:04:58.454263 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:04:58.454359 [info ] [MainThread]:   retry_all: False
+[0m16:04:58.454455 [info ] [MainThread]:   insecure_mode: False
+[0m16:04:58.454551 [info ] [MainThread]:   reuse_connections: True
+[0m16:04:58.454900 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:04:58.510304 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:04:58.540107 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:04:58.540313 [debug] [MainThread]: On debug: select 1 as id
+[0m16:04:58.540434 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:05:02.490971 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.950 seconds
+[0m16:05:02.493889 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:05:02.494527 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:05:02.495671 [info ] [MainThread]: Your new dbt project "netflix" was created!
+Initialized new project in /Users/apple/Documents/netflixpractice/netflix/netflix
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:05:02.533901 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 560.78815, "process_in_blocks": "0", "process_kernel_time": 0.322397, "process_mem_max_rss": "183386112", "process_out_blocks": "0", "process_user_time": 1.424515}
+[0m16:05:02.534502 [debug] [MainThread]: Command `dbt init` succeeded at 16:05:02.534407 after 560.79 seconds
+[0m16:05:02.534725 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:05:02.538578 [debug] [MainThread]: On debug: Close
+[0m16:05:03.077709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6ff100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca128d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df3ff00>]}
+[0m16:05:03.079194 [debug] [MainThread]: Flushing usage events
+[0m16:05:04.218500 [debug] [MainThread]: An error was encountered while trying to flush usage events
